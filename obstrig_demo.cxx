@@ -12,7 +12,7 @@ void match(const obstring& variety, const obstring& mine, const obstring& yours)
 // message is printed saying they are the same; otherwise mine is printed
 // in a message. In either case, the string variety is part of the message.
 
-int main( )
+int main(int argc, char **argv)
 {
     const obstring BLANK(" ");
     obstring me_first("Demo"), me_last("Program");
@@ -32,8 +32,9 @@ int main( )
 
 void match(const obstring& variety, const obstring& mine, const obstring& yours)
 {
-    if (mine == yours)
-        cout << "That is the same as my " << variety << "!" << endl;
-    else
-        cout << "My " << variety << " is " << mine << "." << endl;
+	if (mine == yours) {
+		cout << "That is the same as my " << variety << "!" << endl;
+	} else {
+		cout << "My " << variety << " is " << mine << "." << endl;
+	} 
 }
